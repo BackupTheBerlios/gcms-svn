@@ -62,7 +62,7 @@
 		global $GCMS;
 
 		if(is_array($GCMS['DB']['DATA'])) {
-			if($GCMS['DB']['LINK'] = @mysql_pconnect($GCMS['DB']['DATA']['HOST'], $GCMS['DB']['DATA']['USER'], $GCMS['DB']['DATA']['PASSWORD'])) {
+			if($GCMS['DB']['LINK'] = @mysql_connect($GCMS['DB']['DATA']['HOST'], $GCMS['DB']['DATA']['USER'], $GCMS['DB']['DATA']['PASSWORD'])) {
 				$GCMS['DB']['DATABASE'] = @mysql_select_db($GCMS['DB']['DATA']['DATABASE']);
 				
 				if(!$GCMS['DB']['DATABASE']) {

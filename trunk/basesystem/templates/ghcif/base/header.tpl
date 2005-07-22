@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
 <!--
-* $Id: $
+* $Id$
 *
 * gcms - yet anothe content managment system
 *
 * @author   GCMS Development Team <devel@ghcif.de>
 * @since    2005/03/28
-* @version  $Revision: $
+* @version  $Revision$
 *   
 * Copyright (C) 2005 by ghcif.de <devel@ghcif.de>
 *   

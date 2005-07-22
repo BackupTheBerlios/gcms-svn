@@ -1,13 +1,13 @@
 <?php
 	/** 
-	* $Id: $
+	* $Id$
 	* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4:
 	*
 	* This file is part of GCMS
 	* 
 	* @author   GCMS Development Team <devel@ghcif.de>
 	* @since    2005/05/28
-	* @version  $Revision: $
+	* @version  $Revision$
 	* 
 	* Copyright (C) 2005 by ghcif.de <devel@ghcif.de>
 	*   

@@ -1,0 +1,369 @@
+/* general link colors */
+a, a:link, a:visited, a:active, a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #778899;
+}
+
+a:hover {
+	color: #000000;
+}
+
+
+/* base styles */
+body, html {
+	color: #000000;
+	font-family: sans-serif;
+	font-size: 11px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#main {
+	background: #FFFFFF;
+	margin: auto;
+	padding: 0px;
+	width: 700px;
+	border-width: 0px;
+}
+
+#logo {
+	border-bottom: 3px solid #E6ECEE;
+	margin: 0px;
+	padding: 10px 0px 0px 0px;
+}
+
+#logo a {
+	display: block;
+	height: 125px;
+	width: 700px;
+	margin-left: 0px;
+	text-decoration: none;
+	text-indent: -1000px;
+}
+
+
+/* navigation */
+#menu, #submenu {
+	padding: 0px 0px 0px 15px;
+	border-bottom: 1px solid #676767;
+	font-variant: small-caps;
+	height: 17px;
+	list-style: none;
+	margin: 0px;
+	cursor:default;
+}
+
+#submenu {
+	padding: 0px 0px 0px 30px;
+}
+
+#menu #last a, #submenu #sublast a {
+	border-right: none;
+	font-weight: bold;
+}
+
+#menu a, #submenu a {
+	border-right: 1px solid #E6ECEE;
+	color: #000000;
+	float: left;
+	padding: 1px 10px;
+	text-decoration: none;
+}
+
+#menu #current, #submenu #subcurrent {
+	background: #E6ECEE;
+	color: #333333;                                                                                                                                         
+}
+
+#menu a:hover, #submenu a:hover {
+	background: #d4eeff;
+} 
+
+#menu li, #submenu li {
+	display: inline;
+	margin: 0px;
+	text-align: center;
+}
+
+
+/* content body */
+#content {
+	border-right: 200px solid #EEEEEE;
+	margin: 20px;
+	padding-right: 30px;
+}
+	
+.titleseperator {	
+	font-size:8px;
+}
+
+.contenttitle {
+	width: 100%;
+	text-align: left;
+	padding-left: 5px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	cursor: default;
+	margin-bottom: 15px;
+	font-variant: small-caps;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+.post h2 {
+	color: #666666;
+	font-size: 11px;
+	margin: 0px;
+	padding-top: 0px;
+	font-weight: bold;
+	cursor: default;
+}
+
+.comment {
+	margin: auto;
+	width: 300px;
+	font-size: 10px;
+	color: #666666;
+	cursor: default;
+} 
+
+.post {
+	font-size: 10px;
+	color: #666666;
+	cursor: default;
+	margin-bottom: 10px;
+}
+
+.meta {
+	font-size: 9px;
+	margin-top: 1px;
+}
+			
+.storycontent {
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.feedback {
+	text-align: right;
+}
+
+
+
+
+
+
+
+
+
+/* sidebar menu */
+#sidebar {
+	border-width: 0px;
+	color: #778899;
+	float: right;
+	width: 200px;
+	background: #EEEEEE;
+	cursor: default;
+	list-style: none;
+	margin: 20px 20px 20px 20px;
+	padding: 10px 0px 10px 0px;
+}
+
+#sidebar a {
+	color: #e6e6e6;
+	display: block;
+	height: 25px;
+	padding-left: 10px;
+	text-decoration: none;
+}
+
+#sidebar a:hover {
+	color: #666666;
+}
+
+
+/* error message */
+.error_content {
+	text-align: center;
+	padding: 30px 0px;
+	font-size: 12px;
+	cursor: default;
+}
+
+.error_link {
+	font-size: 11px;
+	font-weight:bold;
+}
+
+
+/* forms */
+form {                                               
+	display: inline;                                         
+}                                                        
+
+.gfield {
+	border: 1px solid #CCCCCC;
+	background-color: #E6ECEE;
+	color: #778899;
+	font-size: 10px;
+	height: 13px;
+	font-family: sans-serif;
+	padding: 0px 2px 0px 2px;
+}
+
+.gbutton {
+	border: 1px solid #CCCCCC;
+	background-color: #E6ECEE;
+	color: #778899;
+	font-size: 10px;
+	height: 15px;
+	font-family: sans-serif;
+	padding: 0px 2px 0px 2px;
+}
+
+.formbox {
+	margin: auto;
+	width: 300px;
+	font-size: 10px;
+	color: #666666;
+	cursor: default;
+}
+					
+
+/* pagination and page number */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.paginationtable {
+	width:100%; 
+	padding:0px; 
+	margin:20px 0px;
+	font-size: 10px;
+	color: #CCCCCC;
+	cursor: default;
+}
+
+.paginationcell_r {
+	text-align: right; 
+	padding: 3px; 
+	width: 20%; 
+	height: 18px;
+}
+
+.paginationcell_l {
+	text-align: left; 
+	padding: 3px; 
+	width: 80%;
+	height: 18px;
+}
+
+#pagination a {
+	color: #CCCCCC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pagenumber {
+	font-weight:bold;
+}
+
+.pagenumber a {
+	font-weight:normal;
+}
+
+
+/* footer */
+#footer {
+	font-size: 10px;
+	font-family: sans-serif;
+	margin: 0em 2em;
+	padding: 10px 0px;
+	text-align: center;
+	cursor: default;
+	clear: both;
+	font-variant: small-caps;
+}
+
+#footer, #footer :link, #footer a:visited {
+	color: #666666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h2 {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 13px;
+	font-weight: normal;
+}
+
+img {
+	border: none;
+}
+
+li {
+	margin-bottom: 3px;
+}
+
+p, li {
+	line-height: 135%;
+}
+
+td {
+	padding: 1px;
+}

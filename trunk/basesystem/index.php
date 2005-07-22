@@ -35,7 +35,7 @@
     define('GCMS_REAL_PATH', dirname(__FILE__));
 	define('GCMS_RELATIVE_PATH', dirname($_SERVER['PHP_SELF']));
 	
-	define('GCMS_URL', 'http://' . $_SERVER['SERVER_NAME'] . GCMS_RELATIVE_PATH);
+	define('GCMS_URL', 'http' . (($_SERVER['HTTPS'] == 'on') ? ('s') : ('')) . '://' . $_SERVER['SERVER_NAME'] . GCMS_RELATIVE_PATH);
 
 
 	/**

@@ -34,20 +34,14 @@
         die('access denied');
     }
 
-
-
-
-
-
-
-
+	
 	/**
 	* db connectiondata
 	*/
 	$GCMS['DB']['DATA']['TYPE'] = 'mysql';
     $GCMS['DB']['DATA']['HOST'] = 'localhost';
-	$GCMS['DB']['DATA']['USER'] = 'gcms';
+	$GCMS['DB']['DATA']['USER'] = 'user';
 	$GCMS['DB']['DATA']['PASSWORD'] = 'password';
-	$GCMS['DB']['DATA']['DATABASE'] = 'gcms';
+	$GCMS['DB']['DATA']['DATABASE'] = 'database';
 	$GCMS['DB']['DATA']['PREFIX'] = 'gcms_';
 ?>

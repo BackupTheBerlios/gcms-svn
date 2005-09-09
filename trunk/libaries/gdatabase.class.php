@@ -153,7 +153,7 @@
                 printf(
                     'database %s: %s',
                     $mydbtype,
-                    $e->getMessage()
+                    $e->custom_message()
                 );
             }             
                 
@@ -169,7 +169,7 @@
             catch(gdatabase_exception $e) {
                 printf(
                     'database options: %s',
-                    $e->getMessage()
+                    $e->custom_message()
                 );
             }
             

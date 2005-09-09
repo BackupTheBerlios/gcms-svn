@@ -61,7 +61,7 @@
     catch(gdatabase_exception $e) {
         printf(
             'database: %s',
-            $e->getMessage()
+            $e->custom_message()
         );
     }
     

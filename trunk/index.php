@@ -26,6 +26,12 @@
     * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
     */
 
+
+    /**
+    * correct gcms start
+    */
+    define('IN_GCMS', 1);
+
     
     /**
     * include common file

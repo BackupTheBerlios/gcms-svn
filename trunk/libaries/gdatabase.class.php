@@ -76,8 +76,8 @@
         * @return mixed  database opbject or exception
         */
         public static function get_instance() {
-            if(self::instance != null) {
-                return self::instance;
+            if(self::$ginstance != null) {
+                return self::$ginstance;
             } else {
                 throw new gdatabase_exception('call factory method first time');
             }
@@ -146,42 +146,37 @@
             * create object of the specific database class
             */
             try {
-                @$myobject = new $classname;
+                @$obj = new $classname;
             }
 
             catch(gdatabase_exception $e) {
                 printf(
                     'database %s: %s',
                     $mydbtype,
-                    $e->custom_message()
+                    $e->getMessage()
                 );
             }             
                 
             /**
             * set the options
             */
-            foreach($options as $option => $value) {
-                try {
-                    $myoptions = $myobject->set_option($option, $value);
+            try {
+                foreach($options AS $option => $value) {
+                    $obj->set_option($option, $value);
                 }
+            }
 
-                catch(gdatabase_exception $e) {
-                    printf(
-                        'database options: %s',
-                        $e->custom_message()
-                    );
-                }
+            catch(gdatabase_exception $e) {
+                printf(
+                    'database options: %s',
+                    $e->getMessage()
+                );
             }
             
             /**
             * write object to instance holder
             */
-            self::instance = $myobject
-            
-            /**
-            * return the object
-            */    
-            return $myobject;        
+            return self::$ginstance = $obj;
         }
 
         

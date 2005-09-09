@@ -26,45 +26,76 @@
     * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
     */
 
-
-    /**
-    * check php version
-    */
-    if (0 > version_compare(PHP_VERSION, '5')) {
-        die('This file was generated for PHP 5');
-    }
-    
     
     /**
-    * include config data
+    * general check
     */
-    require_once(dirname(__FILE__) . '/config.php');
-    
-    
-    /**
-    * include base class files
-    */
-    require_once(LIB_PATH . 'gdatabase.class.php');
-    
-    
-    /**
-    * try to create database object
-    */
-    try {
-        $options = array(
-            'debug' => DEBUG
-        );
-    
-        $db = gdatabase::factory(DB_DSN, $options);
+    if(!defined('IN_GCMS')) {
+        die('access denied');
     }
 
-    catch(gdatabase_exception $e) {
-        printf(
-            'database: %s',
-            $e->getMessage()
-        );
-    }
+	
+    /**
+	* database data
+	*/
+    define('DB_DSN', 'mysql://username:password@hostspec/database_name');
+
+
+    /**
+    * database prefix
+    */
+    define('DB_PREFIX', 'gcms_');
     
+
+    /**
+    * debug level
+    */
+    define('DEBUG', 1);
+
+
+    /**
+    * ----- change the settings below the line only if you know what you do -----
+    */
+   
+
+    /**
+    * real path
+    */
+    define('REAL_PATH', dirname(__FILE__) . '/');
+
+
+    /**
+    * libaries path
+    */
+    define('LIB_PATH', REAL_PATH . 'libaries/');
+
+
+    /**
+    * includes path
+    */
+    define('INC_PATH', REAL_PATH . 'includes/');
+
+
+    /**
+    * relative path
+    */
+    define('RELATIVE_PATH',  (dirname($_SERVER['PHP_SELF']) == '/') ? (dirname($_SERVER['PHP_SELF'])) : (dirname($_SERVER['PHP_SELF']) . '/'));
+                
     
-    
+    /**
+    * images path
+    */
+    define('IMG_PATH', RELATIVE_PATH . 'images/');
+
+
+    /**
+    * styles path
+    */
+    define('CSS_PATH', RELATIVE_PATH . 'styles/');
+
+
+    /** 
+    * gcms url
+    */
+    define('GCMS_URL', 'http://' . $_SERVER['SERVER_NAME'] . RELATIVE_PATH);
 ?>

@@ -75,10 +75,10 @@
         */
         public function set_option($option, $value) {
             if(isset($this->options[$option])) {
-                $this->options[$option] = $value;
+                return $this->options[$option] = $value;
             }
             
-            throw new gdatabase_exception('unknown option' . $option);
+            throw new gdatabase_exception('unknown option ' . $option);
         }
 
 
@@ -96,7 +96,7 @@
                 return $this->options[$option];
             }
             
-            throw new gdatabase_exception('unknown option' . $option);
+            throw new gdatabase_exception('unknown option ' . $option);
         }        
     } /* end of class gdatabase */
 ?>

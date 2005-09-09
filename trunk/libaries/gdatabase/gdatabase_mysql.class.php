@@ -47,7 +47,7 @@
     * @since   04/09/2005
     * @version $Revision: $
     */
-    class gdatabase_mysql implements gdatabase_iface extends gdatabase_common {
+    class gdatabase_mysql extends gdatabase_common implements gdatabase_iface {
         /**
         * constructor
         *
